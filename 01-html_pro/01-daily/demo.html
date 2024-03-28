@@ -54,22 +54,22 @@
     <h1>Table Data</h1>
     <h1>Table Header</h1>
 
-    <table border="1">
+    <table border="1" width="400" height="200" bgcolor="red" background="imgs/seu.webp" bordercolor="blue" cellspacing="0" cellpadding="10" align="center">
         <tr>
-            <th>表头1</th>
+            <th width="100" height="50">表头1</th>
             <th>表头2</th>
             <th>表头3</th>
         </tr>
 
         <tr>
-            <td>数据1</td>
-            <td>数据2</td>
-            <td>数据3</td>
+            <td bgcolor="#0000FF">数据1</td>
+            <td align="center">数据2</td>
+            <td align="right">数据3</td>
         </tr>
 
         <tr>
-            <td>数据21</td>
-            <td>数据22</td>
+            <td valign="top">数据21</td>
+            <td valign="center">数据22</td>
             <td>数据23</td>
         </tr>
 
@@ -93,7 +93,91 @@
         <dd>是中国特有的一种著名饮品，畅销海内外。</dd>
         <dd>茶叶可作饮品，含有多种有益成分，并有保健功效。</dd>
     </dl>
-    
+
+
+    <table border="1">
+        <tr>
+            <td colspan="3">学生成绩</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">张三</td>
+            <td>语文</td>
+            <td>98</td>
+        </tr>
+
+        <tr>
+            <td>数学</td>
+            <td>95</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">李四</td>
+            <td>语文</td>
+            <td>96</td>
+        </tr>
+
+        <tr>
+            <td>数学</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+
+    <!-- <table width="500">
+        <caption>表格标题</caption>
+        <thead>
+            <tr>
+                <th>表格头部</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>表格主体</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>表格底部</td>
+            </tr>
+        </tfoot>
+    </table> -->
+
+    <table width="500">
+        <colgroup style="background-color: yellow;">  <!-- 前两列为第一组-->
+            <col/>  <!-- 第一列-->
+            <col/>
+        </colgroup>
+        <col style="background-color: blue;"/> <!-- 第三列-->
+
+        <caption>表格标题</caption>
+        <thead>
+            <tr>
+                <th align="center">head 1</th>
+                <th>head 2</th>
+                <th>head 3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td align="center">111</td>
+                <td>222</td>
+                <td>333</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>tail 1</td>
+                <td>tail 2</td>
+                <td>tail 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
 </body>
 
 </html>
